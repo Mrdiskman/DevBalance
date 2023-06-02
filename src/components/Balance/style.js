@@ -39,6 +39,6 @@ export const BalanceStyle = styled.div`
  }
 
  @media (min-width:769px){
-    width: 53%;
+  width: 77.5%;
 }
 `

@@ -3,8 +3,8 @@ import { createContext, useState } from "react";
 export const Contexts = createContext({});
 
 const ContextsProvider = ({ children }) => {
-
     const [listTransactions, setListTransactions] = useState([])
+    const [filtered, setFiltered] = useState("All");
 
     const totalBalance = listTransactions?.reduce(
       (acc, prev) =>
@@ -21,10 +21,12 @@ const ContextsProvider = ({ children }) => {
   return (
     <Contexts.Provider
       value={{
+        filtered,
         totalBalance,
         listTransactions, 
         setId,
-        setListTransactions
+        setFiltered,
+        setListTransactions,
       }}
     >
       {children}

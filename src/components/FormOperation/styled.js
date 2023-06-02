@@ -73,7 +73,7 @@ select{
     background-color: #f7050d;
 }
 @media (min-width:769px){
-    width: 55%;
+    width: 80%;
     
 }
 `
